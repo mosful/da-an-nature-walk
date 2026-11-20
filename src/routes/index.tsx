@@ -3,9 +3,9 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "週末自然散步｜大安森林公園（虛構教學活動）" },
+      { title: "週末森林小旅行｜大安森林公園（虛構教學活動）" },
       { name: "description", content: "2026年12月12日上午9點至12點，在大安森林公園一起慢慢散步、觀察自然。此為虛構教學示範活動。" },
-      { property: "og:title", content: "週末自然散步｜大安森林公園" },
+      { property: "og:title", content: "週末森林小旅行｜大安森林公園" },
       { property: "og:description", content: "12/12 上午，在大安森林公園一起觀察樹木與鳥類。虛構教學示範活動。" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -31,10 +31,16 @@ function Index() {
 
       <section className="hero-leaf px-6 py-20 text-center">
         <p className="mb-3 text-sm tracking-[0.3em] text-primary">WEEKEND NATURE WALK</p>
-        <h1 className="font-display text-4xl font-bold sm:text-6xl">週末自然散步</h1>
+        <h1 className="font-display text-4xl font-bold sm:text-6xl">週末森林小旅行</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
           放慢腳步，在城市中的森林裡，聽鳥鳴、看樹影，和自然好好相處一個早上。
         </p>
+        <a
+          href="#map"
+          className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:w-auto"
+        >
+          查看集合地圖
+        </a>
         <span className="mt-6 inline-block rounded-full border border-primary px-4 py-1 text-sm text-primary">
           虛構教學活動
         </span>
@@ -72,7 +78,7 @@ function Index() {
           </section>
         </div>
 
-        <section className="card-soft">
+        <section id="map" className="card-soft scroll-mt-6">
           <h2 className="section-title">集合地圖</h2>
           <div className="overflow-hidden rounded-xl border">
             <iframe

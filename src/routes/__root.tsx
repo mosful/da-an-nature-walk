@@ -81,10 +81,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "週末自然散步" },
+      { title: "週末森林小旅行" },
       { name: "description", content: "虛構教學活動示範網頁" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "週末自然散步" },
+      { property: "og:title", content: "週末森林小旅行" },
       { property: "og:description", content: "虛構教學活動示範網頁" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
