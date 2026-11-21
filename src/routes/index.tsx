@@ -33,7 +33,7 @@ function Index() {
         <p className="mb-3 text-sm tracking-[0.3em] text-primary">WEEKEND NATURE WALK</p>
         <h1 className="font-display text-4xl font-bold sm:text-6xl">週末森林小旅行</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-          放慢腳步，在城市中的森林裡，聽鳥鳴、看樹影，和自然好好相處一個早上。
+          在城市中央的森林裡，花一個早上慢慢走、深呼吸，重新和樹與鳥打招呼。邀請大家一起來散步吧。
         </p>
         <a
           href="#map"
